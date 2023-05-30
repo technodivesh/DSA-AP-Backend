@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    web:
+      build: .
+      command: python manage.py runserver 80:8010
+      ports:
+          - 8010:8010
